@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WeatherApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="appName">Weather App</div>
+
+  <div class="container">
+
+    <div class="searchButton">
+      <input id="cityName" placeholder="Search Your City Name" type="text" >
+      <button onclick="searchBtn()"><i class="fa fa-search"></i></button>
+    </div>
+
+    <div class="upperData"></div>
+
+    <div class="lowerData">
+
+      <div class="weatherData">
+        <div class="loc"></div>
+        <div class="temperature"></div>
+        <div class="description"></div>
+      </div>
+
+      <div class="infoContainer">
+        <div class="block">
+          <div class="label">
+            <img src="images/cool.png" alt="">
+            <span> min</span>
+          </div>
+          <div class="value minTemp"></div>
+        </div>
+
+        <div class="block">
+          <div class="label">
+            <img src="images/hot.png" alt="">
+            <span> max</span>
+          </div>
+          <div class="value maxTemp"></div>
+        </div>
+
+        <div class="block">
+          <div class="label">
+            <img src="images/humidity.png" alt="">
+            <span> humidity</span>
+          </div>
+          <div class="value humidity"></div>
+        </div>
+
+        <div class="block">
+          <div class="label">
+            <img src="images/wind.png" alt="">
+            <span> wind</span>
+          </div>
+          <div class="value wind"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="javaScript.js"></script>
+  <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+</html>
